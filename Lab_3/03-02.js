@@ -38,6 +38,18 @@ http.createServer((req, res) => {
         res.writeHead(200, {'Content-Type' : 'text/html'});
         res.end(result);
     }
+    else if(myUrl.pathname === '/tickk')
+    {
+        let result = fs.readFileSync('tick.html')
+        res.writeHead(200, {'Content-Type' : 'text/html'});
+        res.end(result);
+    }
+    else if(myUrl.pathname === '/immm')
+    {
+        let result = fs.readFileSync('imm.html')
+        res.writeHead(200, {'Content-Type' : 'text/html'});
+        res.end(result);
+    }
     else if(myUrl.pathname === '/tick')
     {
         let k = +myUrl.searchParams.get('k');
