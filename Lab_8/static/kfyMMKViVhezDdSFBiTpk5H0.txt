@@ -1,0 +1,43 @@
+
+Активные подключения
+
+  Имя    Локальный адрес        Внешний адрес          Состояние
+  TCP    0.0.0.0:135            DESKTOP-23I014S:0      LISTENING
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            DESKTOP-23I014S:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:1433           DESKTOP-23I014S:0      LISTENING
+ [sqlservr.exe]
+  TCP    0.0.0.0:8080           DESKTOP-23I014S:0      LISTENING
+ [httpd.exe]
+  TCP    0.0.0.0:49664          DESKTOP-23I014S:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:49665          DESKTOP-23I014S:0      LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49666          DESKTOP-23I014S:0      LISTENING
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49667          DESKTOP-23I014S:0      LISTENING
+ [spoolsv.exe]
+  TCP    0.0.0.0:49668          DESKTOP-23I014S:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    0.0.0.0:49671          DESKTOP-23I014S:0      LISTENING
+ [lsass.exe]
+  TCP    127.0.0.1:1434         DESKTOP-23I014S:0      LISTENING
+ [sqlservr.exe]
+  TCP    192.168.0.107:139      DESKTOP-23I014S:0      LISTENING
+ Не удается получить сведения о владельце
+  TCP    192.168.0.107:53598    149.154.167.51:https   ESTABLISHED
+ [Telegram.exe]
+  TCP    192.168.0.107:53607    wm-in-f188:5228        ESTABLISHED
+ [opera.exe]
+  TCP    192.168.0.107:53608    yandex:https           ESTABLISHED
+ [opera.exe]
+  TCP    192.168.0.107:53616    93.186.225.208:https   ESTABLISHED
+ [opera.exe]
+  TCP    192.168.0.107:53618    srv186-129-240-87:https  ESTABLISHED
+ [opera.exe]
+  TCP    192.168.0.107:53619    srv129-129-240-87:https  ESTABLISHED
+ [opera.exe]
