@@ -16,7 +16,8 @@ db.on('POST', (request, response) => {
 
     request.on('data', data => {
         let row = JSON.parse(data);
-        row.id = db.getIndex();
+        let lastId = db.getLastId();
+        row.id = lastId + 1;
         db.insert(row);
         response.end(JSON.stringify(row));
     });

@@ -21,6 +21,7 @@ let dbData = [
 
 function DB() {
 	this.getIndex = () => { return dbData.length; };
+    this.getLastId = () => {return dbData[dbData.length - 1].id}
     this.select = () => { return dbData; };
     this.insert = row => { dbData.push(row); };
     this.update = row => {
