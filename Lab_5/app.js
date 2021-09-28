@@ -88,16 +88,13 @@ process.stdin.on('readable', () => {
           if(sec) {
               clearTimeout(timerSd);
               timerSd = setTimeout(() =>  server.close(), sec * 1000);
-              timerSD = setTimeout(() => {
-                  close();
-                  sdTimer = null;
-                  },1000 * sec);
               console.log(`Server exit after ${sec} sec`);
           }
           if(!sec && command.trim().length > 2) {
               console.error("ERROR! Parameter isn\'t int");
           }
           if(command.trim().length === 2) {
+              //timerSd.unref();
               clearTimeout(timerSd);
               console.log('Undo exit server');
           }
@@ -108,7 +105,6 @@ process.stdin.on('readable', () => {
    }
   
       if (command.trim().startsWith('sc')) {
-          //!!!!
           let sec = Number(command.trim().replace(/[^\d]/g, ''));
           if(sec) {
               clearTimeout(timerSc);
@@ -156,3 +152,9 @@ process.stdin.on('readable', () => {
       server.close(callback);
       console.log('Server terminated');
   };
+
+  //setTimeout - принимает функцию и кол-во милисекунд через которые ее надо выполнить
+  //setImmediate - функция выполнится в конце цикла событий(после операций ввода/вывода и перед таймерами)
+  //unref - изменяет поведение объекта Timeout(возвращается функциями выше). Timeout не выполнит запланированный код, если это
+  //последний код, который надо выполнить
+  //ref - уберает изменения внесенные unref
