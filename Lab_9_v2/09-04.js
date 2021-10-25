@@ -7,7 +7,7 @@ let parms=JSON.stringify(
         "y": 2,
         "s": "Сообщение",
         "m": ["a","b","c","d"],
-        "o": {"surname":"Чистякова","name":"Юлия"}
+        "o": {"surname":"Шуст","name":"Юрий"}
     }
 );
 let path=`/JSON`;

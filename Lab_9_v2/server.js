@@ -107,11 +107,10 @@ let http_handler=(req,res)=>
 						sumx+=(+e.$.value);
 					});
 				});
-				let result=xmlbuilder.create('response').att('id',id);
-				result.ele('sum',{element:"x",result:sumx});
-				result.ele('concat',{element:"m",result:resultm});
+				let xmlDoc = xmlbuilder.create('response').att('id', id);
+                xmlDoc.ele('sum').att('element', 'x').att('result', sumx).up().ele('concat').att('element', 'm').att('result', resultm);
 				res.writeHead(200,{'Content-Type': 'application/xml'});
-				 res.end(result.toString());}
+				res.end(xmlDoc.toString());}
 				,function(err,reply){
 					console.log(err && err.stack);
 					console.dir(reply);
