@@ -81,7 +81,7 @@ let http_handler=(req,res)=>
 				 res.end(JSON.stringify(result));}
 				,function(err,reply){
 					console.log(err && err.stack);
-					console.dir(reply);
+					
                 });
 			}
 			
